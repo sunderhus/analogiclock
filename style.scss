@@ -1,0 +1,83 @@
+body,html{
+    margin: 0px;
+    padding: 0px;
+    width:100%;
+    height: 100%;
+}
+*{
+    box-sizing: border-box;
+}
+//colors
+$azul:#57A2F8;
+$verde:#60DE8A;
+$oliva:#9AD47D;
+$gelo:#FEFEFE;
+$branco:#ffffff;
+$preto:#000000;
+
+
+
+//div de background
+.wrapper{
+    width: 317px;
+    height: 633px;
+    padding: 2rem;
+    background-color: #57A2F8;
+    position: relative;
+}
+//clock ring
+.clock-body{
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background: $branco;
+    position: relative;
+   
+}
+.center{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    height: 5px;
+    width: 5px;
+    background-color: $oliva;
+    border-radius: 50%;
+    transform: translate(2px,-2px);
+}
+.hand{
+    position: absolute;
+    border-radius: 10px;
+    transition: all 1s ease-in-out;
+}
+    .hours{
+        transform-origin: 100%;
+        top: 50%;
+        right: 50%;
+        height:2px;
+        width: 79.93px;
+        background-color: $oliva;
+        z-index: 3;
+    }
+    .minutes{
+        transform-origin: 100%;
+        top: 50%;
+        right: 50%;
+        width: 90px;
+        height:2px;
+        background-color: $oliva;
+        opacity:0.63;
+        z-index: 2;
+
+    }
+    .seconds{
+        transform-origin: 100%;
+        top: 50%;
+        right: 50%;
+        width: 96px;
+        height:2px;
+        background-color: $azul;
+        opacity: 0.20;
+        z-index: 1;
+
+    }
+   
