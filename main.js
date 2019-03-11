@@ -23,6 +23,6 @@ const rotacionar = (h,m,s)=>{
     phora.style.transform =`rotate(${h}deg)`;
     pminuto.style.transform =`rotate(${m}deg)`;
     psegundo.style.transform =`rotate(${s}deg)`;
-    console.log(h,m,s);
+    // console.log(h,m,s);
 }
  setInterval(updateTime,1000);
