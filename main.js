@@ -6,6 +6,13 @@ function updateTime(){
     const segundos = fullTime.getSeconds();
     const minutos = fullTime.getMinutes();
     const hora = fullTime.getHours();
+    const hands = document.querySelectorAll('.hand');
+    // previne que os ponteiros retornem a origem com o valor 0
+    if (segundos === 0) {
+        hands.forEach(hand => hand.style.transitionDuration = '0s');
+    } else {
+      hands.forEach(hand => hand.style.transitionDuration = '0.05s');
+    }
     //calcula a rotacao
     const degSeconds = (( segundos / 1 ) * 6)+90;
     const degMinutes = (( minutos / 60 ) * 360)+90;
