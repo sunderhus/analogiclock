@@ -43,6 +43,7 @@ $preto:#000000;
     background-color: $oliva;
     border-radius: 50%;
     transform: translate(2px,-2px);
+    z-index: 5;
 }
 .hand{
     position: absolute;

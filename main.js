@@ -11,7 +11,7 @@ function updateTime(){
     if (segundos === 0) {
         hands.forEach(hand => hand.style.transitionDuration = '0s');
     } else {
-      hands.forEach(hand => hand.style.transitionDuration = '0.05s');
+      hands.forEach(hand => hand.style.transitionDuration = '1s');
     }
     //calcula a rotacao
     const degSeconds = (( segundos / 1 ) * 6)+90;
